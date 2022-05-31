@@ -1,6 +1,6 @@
 # Homework 1:  Data Visualization: Less Birth on Holidays?
 
-<img src="visualization.png" height="70%" width="70%" alt = "Heatmap of daily new birth in United States">
+<img src="visualization.png" height="80%" width="80%" alt = "Heatmap of daily new birth in United States">
 
 This chart is a heat map that summarizes the total number of births on each date since 1994-2003. The chart was made to answer a question: Is it true that fewer babies are born on federal holidays and anniversaries(including New Year’s Day, Memorial Day, Independence Day, Thanksgiving Day, and Christmas) and the day after holidays?
 
