@@ -1,5 +1,5 @@
 # Daily Weather Dataset Report
-## Author: Rita Li & Kaiyang Yao
+### Author: Rita Li & Kaiyang Yao
 
 ## Introduction
 For this visualization assignment, we choose a daily weather dataset, which contains daily U.S. weather measurements in 2017. Each row of the dataset shows a series of weather indexes on a specific date, measured by a specific weather station. The weather measurements include the maximum and minimum temperature during the day, the precipitation, snowfall, snow depth, and the wind speed and direction on that day. 
