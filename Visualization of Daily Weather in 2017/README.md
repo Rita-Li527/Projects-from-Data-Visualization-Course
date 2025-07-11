@@ -48,9 +48,9 @@ From the graph, some interesting patterns are shown. Wind direction distribution
 ## Some Interesting Finding
 When we studied the snow data, we found a phenomenon. There are some dates that SNOW (snowfall) of that day is zero, but SNWD (depth of snow) is not zero. This also aroused our curiosity: What is the condition of snow accumulation in the seven states we studied? Therefore, based on the original database, we calculated the number of weather stations in each state with more than four months of snow cover (120 days) and obtained the proportion of areas with more than 120 days of snow. We drew a lollipop plot to show our findings, replacing the circle with the image of snowflakes.
 
-<img src="src/snow.jpg" style="max-width:100%; height:auto;" alt = "A lollipop plot of snow days">
+<img src="src/snow.jpg" style="max-width:70%; height:auto;" alt = "A lollipop plot of snow days">
 
 
 We also drew a lollipop plot about the rainy days in these 7 states. The height of each cloud represents the averager number of rainy days of all weather stations in each state. Though this graph can not perfectly show all the data about the rainy weather in 7 states, it is still a very interesting plot.
 
-<img src="src/rain.jpg" style="max-width:100%; height:auto;" alt = "A lollipop plot of rainy days">
+<img src="src/rain.jpg" style="max-width:70%; height:auto;" alt = "A lollipop plot of rainy days">
