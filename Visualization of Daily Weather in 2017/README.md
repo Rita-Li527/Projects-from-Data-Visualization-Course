@@ -15,7 +15,7 @@ When we study this dataset, there are several points worth noting:
 
 Since there are 500 thousand rows in the original dataset and some states only contribute a small portion of the data, we decide to filter the data by state and pay attention only to the top several states with the highest number of data contributions. So our first question is: which state contributes the most to the dataset? To approach this question, we use a bar chart to record how many rows each state contributes. Then we rank them in descending order. The answer shows that Utah contributes the most, with more than 30 thousand rows; Massachusetts, California, and Oregon are in the second tier; The third tier includes Colorado, Wyoming, and Washington. All of the top 7 states are in the west! Since a higher volume of data will be more accurate when doing further analysis, we decide to filter all of the other states out and keep only the two 7 states. After filtering, we have 200 thousand rows left. To further explore this question, we plot all of the weather stations in the dataset on a US map. The result is not surprising: the 7 states have a relative denser distribution of weather stations. For all the analysis below, we will zero in on the data of those 7 states. 
 
-<img src="src/states.png" height="70%" width="70%" alt="Histogram of count of weather stations">
+<img src="src/states.png" style="max-width:100%; height:auto;" alt="Histogram of count of weather stations">
 
 <img src="src/stations.png" height="60%" width="60%" alt="Map of all weather stations in United States">
 
