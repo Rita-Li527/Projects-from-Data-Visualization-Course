@@ -24,7 +24,7 @@ Since there are 500 thousand rows in the original dataset and some states only c
 
 Our first approach to this question is to use the date of each weather record item in the original database to calculate the season it is in according to the international standard seasonal division. Because the source database is missing data in part of dates, only three seasons, spring, summer, and winter, are included in the following analysis process. At the same time, we subtract TMIN (the lowest daily temperature) from TMAX (the highest daily temperature) in the source database to get a new quantitative variable named "tempchange" that represents the daily temperature difference. We first draw a violin graph to visualize the distribution of daily temperature change for different states. Within each state, we color the violin graph based on the season. This method allows us to compare the difference in the distribution of daily temperature difference between spring, summer, and winter in each state.
 
-<img src="src/violin.jpg" height="80%" width="80%" alt = "A violin plot of daily temperature difference in five states">
+<img src="src/violin.jpg" height="80%" width="50%" alt = "A violin plot of daily temperature difference in five states">
 
 As shown on the graph, the daily temperature changes in winter have a higher density at 10 degrees Fahrenheit, which is relatively lower than the temperature change with the highest density in summer and spring. Moreover, it is clear that the mode of temperature difference in summer is slightly higher than that in spring in the MT, OR, WA, while in other states, the distribution of daily temperature difference in spring and summer is very similar.
 
