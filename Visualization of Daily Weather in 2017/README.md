@@ -17,27 +17,27 @@ Since there are 500 thousand rows in the original dataset and some states only c
 
 <img src="src/states.png" style="max-width:100%; height:auto;" alt="Histogram of count of weather stations">
 
-<img src="src/stations.png" height="60%" width="60%" alt="Map of all weather stations in United States">
+<img src="src/stations.png" style="max-width:100%; height:auto;" alt="Map of all weather stations in United States">
 
 
 ## Question 2 - Does season have an impact on daily temperature difference?
 
 Our first approach to this question is to use the date of each weather record item in the original database to calculate the season it is in according to the international standard seasonal division. Because the source database is missing data in part of dates, only three seasons, spring, summer, and winter, are included in the following analysis process. At the same time, we subtract TMIN (the lowest daily temperature) from TMAX (the highest daily temperature) in the source database to get a new quantitative variable named "tempchange" that represents the daily temperature difference. We first draw a violin graph to visualize the distribution of daily temperature change for different states. Within each state, we color the violin graph based on the season. This method allows us to compare the difference in the distribution of daily temperature difference between spring, summer, and winter in each state.
 
-<img src="src/violin.jpg" height="80%" width="50%" alt = "A violin plot of daily temperature difference in five states">
+<img src="src/violin.jpg" style="max-width:100%; height:auto;" alt = "A violin plot of daily temperature difference in five states">
 
 As shown on the graph, the daily temperature changes in winter have a higher density at 10 degrees Fahrenheit, which is relatively lower than the temperature change with the highest density in summer and spring. Moreover, it is clear that the mode of temperature difference in summer is slightly higher than that in spring in the MT, OR, WA, while in other states, the distribution of daily temperature difference in spring and summer is very similar.
 
 The advantage of the Violin Plot is that it can show subtle differences that are not detectable in the box plot. On the other hand, the box plot shows the outliers in the data more clearly. Therefore, we also drew a boxplot to illustrate the influence of season on the daily temperature difference. In this boxplot, we divide the data into three groups according to the season. Within each group, color the boxplot according to the state. As can be seen from the graph, the boxplots of the winter group have lower median values and higher and more outliers.
 
-<img src="src/boxplot.jpg" height="80%" width="80%" alt = "A boxplot of daily temperature difference of five states in three seasons">
+<img src="src/boxplot.jpg" style="max-width:100%; height:auto;" alt = "A boxplot of daily temperature difference of five states in three seasons">
 
 
 ## Questions 3: Which direction contains the fastest wind speed?
 
 Next, we change our attention to the wind speed. There are 3 attributes about wind speed in the dataset. AWND stands for average daily wind speed; WDF5 and WSF5 stand for the direction of the fastest 5-second wind and its speed respectively. We are interested in finding if there is a pattern of the direction of the fastest 5-second wind speed. That is, if the fastest 5-second wind speed blows to a specific direction more often. 
 
-<img src="src/wind.png" height="70%" width="70%" alt = "Radar chart of Wind Direaction">
+<img src="src/wind.png" style="max-width:100%; height:auto;" alt = "Radar chart of Wind Direaction">
 
 The graph above shows us a clear pattern. Most of the wind in the 7 states we choose are blowing from east to west, with only a few blowing to the east direction. To further explore the pattern, we seperate the count by season and check if there is a seasonal pattern of wind direction.
 
@@ -48,9 +48,9 @@ From the graph, some interesting patterns are shown. Wind direction distribution
 ## Some Interesting Finding
 When we studied the snow data, we found a phenomenon. There are some dates that SNOW (snowfall) of that day is zero, but SNWD (depth of snow) is not zero. This also aroused our curiosity: What is the condition of snow accumulation in the seven states we studied? Therefore, based on the original database, we calculated the number of weather stations in each state with more than four months of snow cover (120 days) and obtained the proportion of areas with more than 120 days of snow. We drew a lollipop plot to show our findings, replacing the circle with the image of snowflakes.
 
-<img src="src/snow.jpg" height="60%" width="60%" alt = "A lollipop plot of snow days">
+<img src="src/snow.jpg" style="max-width:100%; height:auto;" alt = "A lollipop plot of snow days">
 
 
 We also drew a lollipop plot about the rainy days in these 7 states. The height of each cloud represents the averager number of rainy days of all weather stations in each state. Though this graph can not perfectly show all the data about the rainy weather in 7 states, it is still a very interesting plot.
 
-<img src="src/rain.jpg" height="60%" width="60%" alt = "A lollipop plot of rainy days">
+<img src="src/rain.jpg" style="max-width:100%; height:auto;" alt = "A lollipop plot of rainy days">
